@@ -108,8 +108,10 @@ export default function Home() {
           </ul>
       
           <p className="text-sm leading-relaxed font-sans" style={{ color: colors.textMuted }}>
+            i'm joining <strong><a href="https://chipagents.ai" target="_blank" rel="noopener noreferrer" className="hover:underline transition-all duration-200" style={{ color: 'inherit' }}>ChipAgents</a></strong> as an ai research engineer to build more reliable agents for chip design & verification.
             previously, i was an ai/ml sde intern at <strong>AWS</strong> SageMaker Unified Studio where i built, deployed, and scaled AI agents. i worked end-to-end, including infrastructure (IaC), to agentic workflows with memory/hitl, and MCP/A2A integrations.
           </p>
+
           {/* <br></br> */}
 
         {/* <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
