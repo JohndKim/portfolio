@@ -4,14 +4,15 @@ import dynamite from '../assets/img/dance/dynamite.jpeg';
 import drama from '../assets/img/dance/drama.jpeg';
 import monster from '../assets/img/dance/monster.jpeg';
 import gogo from '../assets/img/dance/gogo.jpeg';
+import go from '../assets/img/dance/cortis_go.jpeg';
 
 const danceData = [
   {
     id: 1,
     title: "go!",
     artist: "cortis",
-    image: null,
-    youtubeUrl: null,
+    image: go,
+    youtubeUrl: 'https://www.youtube.com/watch?v=TGWEyvzRxyo&t=1890s',
     description: "spring 2026",
     date: "2026"
   },
@@ -20,7 +21,7 @@ const danceData = [
     title: "pretty u",
     artist: "seventeen",
     image: pretty_u,
-    youtubeUrl: null,
+    youtubeUrl: 'https://www.youtube.com/watch?v=lPSh1pc6j8U&t=1571s',
     description: "fall 2025",
     date: "2025"
   },
@@ -47,7 +48,7 @@ const danceData = [
     title: "drama",
     artist: "txt",
     image: drama,
-    youtubeUrl: 'https://youtu.be/wTJEqgXBj8U?si=ju6SDgPk9GJOdXAo',
+    youtubeUrl: 'https://youtu.be/wTJEqgXBj8U?si=ju6SDgPk9GJOdXAo&t=125',
     description: "spring 2024",
     date: "2024"
   },
@@ -56,7 +57,7 @@ const danceData = [
     title: "go go",
     artist: "bts",
     image: gogo,
-    youtubeUrl: 'https://youtu.be/-uANlb4ovIM?si=Q6Al3v0-vBaec_v_',
+    youtubeUrl: 'https://youtu.be/-uANlb4ovIM?si=Q6Al3v0-vBaec_v_&t=135',
     description: "fall 2023",
     date: "2023"
   },

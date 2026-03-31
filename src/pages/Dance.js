@@ -63,6 +63,13 @@ export default function Dance() {
                       coming soon
                     </span>
                   )}
+                  {/* Tooltip for linked cards */}
+                  {dance.youtubeUrl && (
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-xs font-sans"
+                         style={{ backgroundColor: colors.textMuted, color: colors.bg }}>
+                      click to see the dance!
+                    </div>
+                  )}
                 </div>
 
                 {/* Caption */}
@@ -71,7 +78,7 @@ export default function Dance() {
                     className="text-sm font-medium font-sans"
                     style={{ color: colors.text }}
                   >
-                    <span className="transition-all duration-200 group-hover:underline">
+                    <span className={`transition-all duration-200 ${dance.youtubeUrl ? 'group-hover:underline' : ''}`}>
                       {dance.title}
                     </span>
                     {dance.artist && (
