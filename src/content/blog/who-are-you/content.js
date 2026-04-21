@@ -56,7 +56,7 @@ My korean name is 김동휘. 김 is my family surname. 동 means "east" in hanja
 
 The theme for the website comes from my name, but I really wanted to go for a minimalistic, academic, yet unique feeling. Especially because many PhD students and professor websites are simple, with content that speaks for itself. 
 
-I hope I nailed a mix of minimalism with flare, but I'm concerned the website looks to flashy.
+I hope I nailed a mix of minimalism with flare, but I'm concerned the website looks too flashy.
 
 The inspiration for my website comes from:
 - [zen wu](https://zen-wu.social/index.html)

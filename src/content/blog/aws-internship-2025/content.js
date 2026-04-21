@@ -205,4 +205,7 @@ Would I do it again?
 ~~Maybe.~~ I think if I went back in time, I would still do this internship. The work is interesting, and it's a good mix between software engineering and AI. The only thing I would prefer is working on the research side of things rather than engineering because I find things like model customization, interpretability, and other areas really interesting. It would also help more in PhD apps :)
 
 **Result on RO:**
-TBD...`;
+Base salary: $148,400
+Sign-on bonus: $56,100, additional $38,100 after year 1
+Stock (RSUs): $128,166 (5% y1, 15% y2, 20% y2.5, 20% y3, 20% y3.5, 20% y4)
+`;

@@ -38,11 +38,11 @@ export default function Blog() {
               </h2>
             </Link>
             
-            <div className="flex items-center space-x-3 text-xs font-sans" style={{ color: colors.textMuted }}>
+            <div className="flex items-center space-x-3 text-sm font-sans" style={{ color: colors.textMuted }}>
               <time>{post.date}</time>
             </div>
             
-            <p className="text-xs leading-relaxed font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm leading-relaxed font-sans" style={{ color: colors.textMuted }}>
               {post.excerpt}
             </p>
           </article>

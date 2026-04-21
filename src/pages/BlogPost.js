@@ -43,12 +43,12 @@ export default function BlogPost() {
   if (!post) {
     return (
       <div className="py-16 text-center">
-        <h1 className="text-2xl font-medium font-space mb-4" style={{ color: colors.text }}>
+        <h1 className="text-3xl font-medium font-sans mb-4" style={{ color: colors.text }}>
           Post not found
         </h1>
         <Link 
           to="/blog"
-          className="text-base font-sans hover:underline transition-colors duration-200"
+          className="text-lg font-sans hover:underline transition-colors duration-200"
           style={{ color: colors.link }}
           onMouseEnter={(e) => e.target.style.color = colors.linkHover}
           onMouseLeave={(e) => e.target.style.color = colors.link}
@@ -62,7 +62,7 @@ export default function BlogPost() {
   return (
     <div className="py-8">
       {/* Breadcrumb Navigation */}
-      <nav className="mb-8 text-sm font-sans">
+      <nav className="mb-8 text-base font-sans">
         <Link 
           to="/"
           className="hover:underline transition-colors duration-200"
@@ -88,10 +88,10 @@ export default function BlogPost() {
 
       {/* Post Header */}
       <header className="mb-8">
-        <h1 className="text-3xl font-medium font-space mb-4" style={{ color: colors.text }}>
+        <h1 className="text-3xl font-medium font-sans mb-4" style={{ color: colors.text }}>
           {post.title}
         </h1>
-        <div className="flex items-center space-x-4 text-sm font-sans" style={{ color: colors.textMuted }}>
+        <div className="flex items-center space-x-4 text-base font-sans" style={{ color: colors.textMuted }}>
           <p>{post.date}</p>
         </div>
       </header>

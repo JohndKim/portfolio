@@ -29,10 +29,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        sans: ["JetBrains Mono", "monospace"],
+        sans: ["Lato", "sans-serif"],
         mono: ["Space Mono", "monospace"],
         'space': ["Space Mono", "monospace"],
         'jetbrains': ["JetBrains Mono", "monospace"],
+        'inter': ["Lato", "sans-serif"],
       },
 
       container: {

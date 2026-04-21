@@ -130,34 +130,34 @@ export default function BlogContent({ content, sideComments = [], onRefHover, on
         {`
           .markdown-content h1, .markdown-content h2, .markdown-content h3, .markdown-content h4 {
             color: ${colors.text};
-            font-family: 'Space Mono', monospace;
+            font-family: 'Lato', sans-serif;
             font-weight: 500;
             margin-bottom: 1.5rem;
           }
-          .markdown-content h1 { font-size: 1.5rem; }
-          .markdown-content h2 { font-size: 1.25rem; }
-          .markdown-content h3 { font-size: 1.125rem; }
-          .markdown-content h4 { font-size: 1rem; margin-bottom: 0.6rem; }
-          
+          .markdown-content h1 { font-size: 1.75rem; }
+          .markdown-content h2 { font-size: 1.5rem; }
+          .markdown-content h3 { font-size: 1.25rem; }
+          .markdown-content h4 { font-size: 1.125rem; margin-bottom: 0.6rem; }
+
           .markdown-content p {
             color: ${colors.textSecondary};
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.875rem;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
             line-height: 1.625;
             margin-bottom: 1.5rem;
           }
-          
+
           .markdown-content ul {
             margin-top: 0;
             margin-bottom: 1.0rem;
             padding-left: 1.5rem;
             list-style: none;
           }
-          
+
           .markdown-content li {
             color: ${colors.textSecondary};
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.875rem;
+            font-family: 'Lato', sans-serif;
+            font-size: 1rem;
             line-height: 1.625;
             margin-bottom: 0.5rem;
             position: relative;
