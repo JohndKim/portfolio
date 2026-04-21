@@ -32,16 +32,16 @@ export default function Home() {
         </div>
         <div className="space-y-4">
           <div className="flex items-center space-x-3">
-            <h1 className="text-3xl font-light font-space" style={{ color: colors.text }}>
+            <h1 className="text-4xl font-medium font-sans" style={{ color: colors.text }}>
               dongwhi kim
             </h1>
             <span 
-              className="text-2xl cursor-help relative group"
+              className="text-3xl cursor-help relative group"
               style={{ color: colors.textMuted }}
               title="east star"
             >
               김동휘
-              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-xs"
+              <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-sm"
                    style={{ backgroundColor: colors.textMuted, color: colors.bg }}>
                 east star
               </div>
@@ -61,7 +61,7 @@ export default function Home() {
           </div>
           
           {/* External Links */}
-          <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-sm font-sans">
+          <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-base font-space">
             {[
               { name: 'git', url: 'https://github.com/johnkimdw' },
               { name: 'cv', url: '/cv.pdf' },
@@ -82,7 +82,7 @@ export default function Home() {
                   {link.name}
                 </a>
                 {index < array.length - 1 && (
-                  <span className="text-xs" style={{ color: colors.textMuted }}>✦</span>
+                  <span className="text-sm" style={{ color: colors.textMuted }}>✦</span>
                 )}
               </React.Fragment>
             ))}
@@ -93,23 +93,24 @@ export default function Home() {
       {/* About Section */}
       <section className="text-left">
         <div className="space-y-6">
-          <p className="text-sm leading-relaxed font-sans" style={{ color: colors.textMuted }}>
+          <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
             i go by{' '}
-            <HighlightedText bold>john</HighlightedText>
-            , a senior at the University of Notre Dame, double majoring in cs & applied math. broadly, i work on <strong>trustworthy AI</strong> and <strong>reliable AI systems</strong>, advised by{' '}
+            <HighlightedText><strong>john</strong></HighlightedText>
+            , an incoming phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and funded by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
+            i've almost graduated from notre dame studying cs & applied math, where I was advised by {' '}
             <HighlightedText href="https://www.nunomoniz.co/">nuno moniz</HighlightedText>
             {' '}and{' '}
-            <HighlightedText href="http://www.meng-jiang.com/">meng jiang</HighlightedText>. my interests more specifically:
+            <HighlightedText href="http://www.meng-jiang.com/">meng jiang</HighlightedText>.
+
+            <br></br>
+            <br></br>
+            
+            broadly, i work on <strong>trustworthy AI</strong>. i care about evaluating, interpreting, and steering models to be reliable for the respective communities they serve.
           </p>
-          <ul className="text-sm leading-relaxed font-sans list-disc list-inside" style={{ color: colors.textMuted }}>
-            <li>build rigorous evaluations to identify safety issues (benchmarking)</li>
-            <li>understand why these failures occur (interpretability)</li>
-            <li>and fix/align models to prevent them (steering)</li>
-          </ul>
-      
-          <p className="text-sm leading-relaxed font-sans" style={{ color: colors.textMuted }}>
+{/*   
+          <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
             previously, i was an ai/ml sde intern at <strong>AWS</strong> SageMaker Unified Studio where i built, deployed, and scaled AI agents. i worked end-to-end, including infrastructure (IaC), to agentic workflows with memory/hitl, and MCP/A2A integrations.
-          </p>
+          </p> */}
 
 
 
@@ -124,8 +125,9 @@ export default function Home() {
 
       {/* Research Section */}
       <section>
-        <h2 className="text-lg font-medium mb-4 mt-10 font-space" style={{ color: colors.text }}>
-          Selected works
+        <h2 className="text-xl font-medium mb-4 mt-10 font-sans flex items-baseline gap-3" style={{ color: colors.text }}>
+          publications
+          <span className="text-xs font-normal font-sans" style={{ color: colors.textMuted }}>(*=equal contribution)</span>
         </h2>
         <div className="space-y-6">
           <div className="space-y-1">
@@ -133,19 +135,19 @@ export default function Home() {
               href="https://arxiv.org/pdf/2601.06757" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm leading-relaxed transition-colors duration-200 hover:underline font-sans"
+              className="text-base leading-relaxed transition-colors duration-200 hover:underline font-sans"
               style={{ color: colors.link }}
               onMouseEnter={(e) => e.target.style.color = colors.linkHover}
               onMouseLeave={(e) => e.target.style.color = colors.link}
             >
               MTMCS-Bench: Evaluating Contextual Safety of Multimodal Large Language Models in Multi-Turn Dialogues
             </a>
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               ACL Findings, 2026
 
             </p>
 
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               Zheyuan Liu*, <strong>Dongwhi Kim*</strong>, Yixin Wan, Xiangchi Yuan, Zhaoxuan Tan, Fengran Mo, Meng Jiang 
             </p>
           </div>
@@ -154,19 +156,19 @@ export default function Home() {
               href="https://arxiv.org/pdf/2512.11661" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm leading-relaxed transition-colors duration-200 hover:underline font-sans"
+              className="text-base leading-relaxed transition-colors duration-200 hover:underline font-sans"
               style={{ color: colors.link }}
               onMouseEnter={(e) => e.target.style.color = colors.linkHover}
               onMouseLeave={(e) => e.target.style.color = colors.link}
             >
               From Verification Burden to Trusted Collaboration: Design Goals for LLM-Assisted Literature Reviews
             </a>
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               AAAI Workshop on AI for Scientific Research, 2026
 
             </p>
 
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               Brenda Nogueira, Werner Geyer, Andrew Anderson, Toby Jia-Jun Li, <strong>Dongwhi Kim</strong>, Nuno Moniz, Nitesh V Chawla
             </p>
           </div>
@@ -175,19 +177,19 @@ export default function Home() {
               href="https://link.springer.com/chapter/10.1007/978-3-031-91398-3_33" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm leading-relaxed transition-colors duration-200 hover:underline font-sans"
+              className="text-base leading-relaxed transition-colors duration-200 hover:underline font-sans"
               style={{ color: colors.link }}
               onMouseEnter={(e) => e.target.style.color = colors.linkHover}
               onMouseLeave={(e) => e.target.style.color = colors.link}
             >
               Relevance Aware Algorithmic Recourse
             </a>
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               IDA, 2025
 
             </p>
 
-            <p className="text-xs font-sans" style={{ color: colors.textMuted }}>
+            <p className="text-sm font-sans" style={{ color: colors.textMuted }}>
               <strong>Dongwhi Kim</strong>, Nuno Moniz.
             </p>
           </div>
@@ -196,17 +198,26 @@ export default function Home() {
 
       {/* GitHub Contributions Section */}
       <section>
-        <h2 className="text-lg font-medium mb-4 mt-10 font-space" style={{ color: colors.text }}>
-          Github Activity
+        <h2 className="text-xl font-medium mb-4 mt-10 font-sans" style={{ color: colors.text }}>
+          github activity
         </h2>
         <div className="w-full">
           <GitHubCalendar 
             username="johnkimdw"
             blockRadius={20}
-            // theme={{
-            //   light: ['#f1f5f9', '#dbeafe', '#93c5fd', '#3b82f6', '#1e40af'],
-            //   dark: ['#0f172a', '#1e3a8a', '#3b82f6', '#60a5fa', '#93c5fd']
-            // }}
+            theme={isDark ? {
+              level0: '#0f172a',
+              level1: '#1e3a8a',
+              level2: '#3b82f6',
+              level3: '#60a5fa',
+              level4: '#93c5fd',
+            } : {
+              level0: '#f1f5f9',
+              level1: '#dbeafe',
+              level2: '#93c5fd',
+              level3: '#3b82f6',
+              level4: '#1e40af',
+            }}
             style={{
               color: colors.textMuted
             }}
@@ -215,125 +226,6 @@ export default function Home() {
       </section>
 
 
-      {/* Projects Section */}
-      <section>
-        <h2 className="text-lg font-medium mb-4 mt-10 font-space" style={{ color: colors.text }}>
-          Projects
-        </h2>
-        <div className="space-y-6">
-          {/* PROJECT 1 */}
-          <div className="flex items-start space-x-4">
-            <div className="w-16 h-16 rounded flex-shrink-0 flex items-center justify-center" 
-                 style={{ backgroundColor: colors.textMuted + '20', border: `1px solid ${colors.border}` }}>
-              <span className="text-xs" style={{ color: colors.textMuted }}>OSS</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <a 
-                  href="https://github.com/ziems/arbor" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-200 hover:underline font-sans"
-                  style={{ color: colors.link }}
-                  onMouseEnter={(e) => e.target.style.color = colors.linkHover}
-                  onMouseLeave={(e) => e.target.style.color = colors.link}
-                >
-                  DSPy
-                </a>
-              </div>
-              <p className="text-xs font-san italic underline" style={{ color: colors.textMuted }}>
-                Open-source contributor for RL optimizations, Arbor
-              </p>
-              <p className="text-xs leading-relaxed font-sans" style={{ color: colors.textMuted }}>
-                Built NVIDIA-GPU monitoring tools for training, JQlang query logging for debug, and used vLLM for reinforcement learning. Added CLI/Python module for config management, API startup, and example scripts.
-              </p>
-            </div>
-          </div>
-          
-          {/* PROJECT 2 */}
-          <div className="flex items-start space-x-4">
-            <div className="w-16 h-16 rounded flex-shrink-0 flex items-center justify-center"
-                 style={{ backgroundColor: colors.textMuted + '20', border: `1px solid ${colors.border}` }}>
-              <span className="text-xs" style={{ color: colors.textMuted }}>ML</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <a 
-                  href="https://github.com/johnkimdw/handwritten-math-transcription" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-200 hover:underline font-sans"
-                  style={{ color: colors.link }}
-                  onMouseEnter={(e) => e.target.style.color = colors.linkHover}
-                  onMouseLeave={(e) => e.target.style.color = colors.link}
-                >
-                  Handwritten Math Equation Transcriber
-                </a>
-              </div>
-              <p className="text-xs leading-relaxed font-sans" style={{ color: colors.textMuted }}>
-                Built bidirectional LSTM encoder-decoder architecture with multi-head attention mechanism for seq2seq learning. 
-                Pre-processed equations to LaTeX, then corrected with LLM using in-context learning with 92% validation accuracy.
-              </p>
-            </div>
-          </div>
-
-          {/* PROJECT 3 */}
-          <div className="flex items-start space-x-4">
-            <div className="w-16 h-16 rounded flex-shrink-0 flex items-center justify-center" 
-                 style={{ backgroundColor: colors.textMuted + '20', border: `1px solid ${colors.border}` }}>
-              <span className="text-xs" style={{ color: colors.textMuted }}>WEB</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <a 
-                  href="https://github.com/johnkimdw/recepit" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-200 hover:underline font-sans"
-                  style={{ color: colors.link }}
-                  onMouseEnter={(e) => e.target.style.color = colors.linkHover}
-                  onMouseLeave={(e) => e.target.style.color = colors.link}
-                >
-                  Recepit
-                </a>
-              </div>
-              <p className="text-xs font-san italic underline" style={{ color: colors.textMuted }}>
-               1st Place Advanced Databases Final Project ($1050)
-              </p>
-              <p className="text-xs leading-relaxed font-sans" style={{ color: colors.textMuted }}>
-Architected React Native app with Expo/Redux, Python (FastAPI), Oracle database, AWS EC2 hosting and S3 
-     buckets. Coded collaborative filtering recommendation system using PL/SQL procedures, indexes, views and job scheduler.              </p>
-            </div>
-          </div>
-
-          {/* PROJECT 4 */}
-          <div className="flex items-start space-x-4">
-            <div className="w-16 h-16 rounded flex-shrink-0 flex items-center justify-center"
-                 style={{ backgroundColor: colors.textMuted + '20', border: `1px solid ${colors.border}` }}>
-              <span className="text-xs" style={{ color: colors.textMuted }}>WEB</span>
-            </div>
-            <div className="space-y-1">
-              <div className="flex items-center gap-2">
-                <a 
-                  href="https://github.com/Leoreoreo/TravelItineraryManager" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-sm transition-colors duration-200 hover:underline font-sans"
-                  style={{ color: colors.link }}
-                  onMouseEnter={(e) => e.target.style.color = colors.linkHover}
-                  onMouseLeave={(e) => e.target.style.color = colors.link}
-                >
-                  Travel Itinerary Manager
-                </a>
-              </div>
-              <p className="text-xs leading-relaxed font-sans" style={{ color: colors.textMuted }}>
-                Built entire backend with Flask, PostgreSQL (pgvector for embeddings), Redis/Celery for task scheduling, AWS hosted. 
-                Generated 10k synthetic trips, automated clustering/vectorizer model updates, designed content-based recommender.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

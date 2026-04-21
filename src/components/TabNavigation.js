@@ -21,7 +21,7 @@ export default function TabNavigation() {
       <div className="max-w-2xl mx-auto px-6">
         {/* Desktop Navigation */}
         <div className="hidden sm:flex justify-center items-center">
-          <div className="flex items-center gap-4 text-sm font-sans">
+          <div className="flex items-center gap-4 text-sm font-space">
             {tabs.map((tab, index) => (
               <React.Fragment key={tab.name}>
                 <Link
@@ -62,7 +62,7 @@ export default function TabNavigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="px-3 py-1 transition-all duration-300 flex items-center gap-2 text-sm font-sans"
+            className="px-3 py-1 transition-all duration-300 flex items-center gap-2 text-sm font-space"
             style={{ color: colors.text }}
             aria-label="Toggle menu"
           >
@@ -110,7 +110,7 @@ export default function TabNavigation() {
             isMenuOpen ? 'max-h-48 opacity-100 mt-2' : 'max-h-0 opacity-0'
           }`}
         >
-          <div className="grid grid-cols-2 gap-2 text-sm font-sans py-2 max-w-[200px] mx-auto">
+          <div className="grid grid-cols-2 gap-2 text-sm font-space py-2 max-w-[200px] mx-auto">
             {tabs.map((tab) => (
               <Link
                 key={tab.name}

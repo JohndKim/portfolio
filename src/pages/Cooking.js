@@ -9,10 +9,10 @@ export default function Cooking() {
     <div className="space-y-8 py-8">
       {/* Header */}
       <section className="text-center space-y-4">
-        <h1 className="text-2xl font-light font-space" style={{ color: colors.text }}>
+        <h1 className="text-3xl font-base font-sans" style={{ color: colors.text }}>
           cooking
         </h1>
-        <p className="text-sm font-sans max-w-md mx-auto" style={{ color: colors.textMuted }}>
+        <p className="text-base font-sans max-w-md mx-auto" style={{ color: colors.textMuted }}>
           some dishes i've made to save $$ (and i like cooking)
         </p>
       </section>
@@ -42,19 +42,19 @@ export default function Cooking() {
               {/* Caption */}
               <div className="space-y-1">
                 <h3 
-                  className="text-sm font-medium font-sans transition-colors duration-200"
+                  className="text-base font-medium font-sans transition-colors duration-200"
                   style={{ color: colors.text }}
                 >
                   {dish.title}
                 </h3>
                 <p 
-                  className="text-xs font-sans"
+                  className="text-sm font-sans"
                   style={{ color: colors.textMuted }}
                 >
                   {dish.description}
                 </p>
                 <p 
-                  className="text-xs font-sans"
+                  className="text-sm font-sans"
                   style={{ color: colors.textMuted, opacity: 0.7 }}
                 >
                   {dish.date}
@@ -68,7 +68,7 @@ export default function Cooking() {
       {/* Footer note */}
       <section className="text-center pt-8">
         <p 
-          className="text-xs font-sans italic"
+          className="text-sm font-sans italic"
           style={{ color: colors.textMuted, opacity: 0.6 }}
         >
           cooking more stuff up :)

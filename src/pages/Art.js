@@ -7,7 +7,7 @@ export default function Art() {
   return (
     <div className="flex items-center justify-center min-h-[60vh]">
       <p
-        className="text-sm font-sans"
+        className="text-base font-sans"
         style={{ color: colors.textMuted }}
       >
         keep posted. coming soon :)

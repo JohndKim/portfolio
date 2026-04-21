@@ -25,10 +25,10 @@ export default function Dance() {
     <div className="space-y-8 py-8">
       {/* Header */}
       <section className="text-center space-y-4">
-        <h1 className="text-2xl font-light font-space" style={{ color: colors.text }}>
+        <h1 className="text-3xl font-base font-sans" style={{ color: colors.text }}>
           dance
         </h1>
-        <p className="text-sm font-sans max-w-md mx-auto" style={{ color: colors.textMuted }}>
+        <p className="text-base font-sans max-w-md mx-auto" style={{ color: colors.textMuted }}>
           biggest hit @ notre dame
           <br></br>
           2023 - now
@@ -57,7 +57,7 @@ export default function Dance() {
                     />
                   ) : (
                     <span
-                      className="text-sm font-sans italic"
+                      className="text-base font-sans italic"
                       style={{ color: colors.textMuted }}
                     >
                       coming soon
@@ -65,7 +65,7 @@ export default function Dance() {
                   )}
                   {/* Tooltip for linked cards */}
                   {dance.youtubeUrl && (
-                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-xs font-sans"
+                    <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap text-sm font-sans"
                          style={{ backgroundColor: colors.textMuted, color: colors.bg }}>
                       click to see the dance!
                     </div>
@@ -75,7 +75,7 @@ export default function Dance() {
                 {/* Caption */}
                 <div className="space-y-1">
                   <h3
-                    className="text-sm font-medium font-sans"
+                    className="text-base font-medium font-sans"
                     style={{ color: colors.text }}
                   >
                     <span className={`transition-all duration-200 ${dance.youtubeUrl ? 'group-hover:underline' : ''}`}>
@@ -92,7 +92,7 @@ export default function Dance() {
                   </h3>
                   {dance.description && (
                     <p
-                      className="text-xs font-sans"
+                      className="text-sm font-sans"
                       style={{ color: colors.textMuted }}
                     >
                       {dance.description}
@@ -104,7 +104,7 @@ export default function Dance() {
           </div>
         ) : (
           <p
-            className="text-center text-sm font-sans"
+            className="text-center text-base font-sans"
             style={{ color: colors.textMuted }}
           >
             coming soon...
@@ -115,7 +115,7 @@ export default function Dance() {
       {/* Footer note */}
       <section className="text-center pt-8">
         <p
-          className="text-xs font-sans italic"
+          className="text-sm font-sans italic"
           style={{ color: colors.textMuted, opacity: 0.6 }}
         >
           tbd
