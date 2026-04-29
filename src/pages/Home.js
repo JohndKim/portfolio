@@ -96,7 +96,7 @@ export default function Home() {
           <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
             i go by{' '}
             <HighlightedText><strong>john</strong></HighlightedText>
-            , an incoming phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and funded by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
+            , an incoming phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and supported by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
             i've almost graduated from notre dame studying cs & applied math, where I was advised by {' '}
             <HighlightedText href="https://www.nunomoniz.co/">nuno moniz</HighlightedText>
             {' '}and{' '}
