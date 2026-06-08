@@ -12,8 +12,7 @@ export default function TabNavigation() {
     { name: 'home', type: 'route', path: '/' },
     { name: 'blog', type: 'route', path: '/blog' },
     { name: 'cooking', type: 'route', path: '/cooking' },
-    { name: 'dance', type: 'route', path: '/dance' },
-    { name: 'art', type: 'route', path: '/art' }
+    { name: 'dance', type: 'route', path: '/dance' }
   ];
 
   return (

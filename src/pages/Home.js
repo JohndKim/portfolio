@@ -96,16 +96,17 @@ export default function Home() {
           <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
             i go by{' '}
             <HighlightedText><strong>john</strong></HighlightedText>
-            , an incoming phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and supported by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
-            i've almost graduated from notre dame studying cs & applied math, where I was advised by {' '}
+            , a first-year phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and supported by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
+            i studied cs & applied math in my undergrad at notre dame, where worked on trustworthy AI with {' '}
             <HighlightedText href="https://www.nunomoniz.co/">nuno moniz</HighlightedText>
             {' '}and{' '}
             <HighlightedText href="http://www.meng-jiang.com/">meng jiang</HighlightedText>.
 
             <br></br>
             <br></br>
+
+            currently, i'm exploring <strong style={{ color: colors.link }}>world models</strong>.
             
-            broadly, i work on <strong>trustworthy AI</strong>. i care about evaluating, interpreting, and steering models to be reliable for the respective communities they serve.
           </p>
 {/*   
           <p className="text-base leading-relaxed font-sans" style={{ color: colors.textMuted }}>
