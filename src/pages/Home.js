@@ -97,10 +97,10 @@ export default function Home() {
             i go by{' '}
             <HighlightedText><strong>john</strong></HighlightedText>
             , a first-year phd student at northwestern advised by <HighlightedText href="https://limanling.github.io/">manling li</HighlightedText>, and supported by the <a href="https://www.nsf.gov/funding/opportunities/grfp-nsf-graduate-research-fellowship-program" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nsf grfp</a>. 
-            i studied cs & applied math in my undergrad at notre dame, where worked on trustworthy AI with {' '}
-            <HighlightedText href="https://www.nunomoniz.co/">nuno moniz</HighlightedText>
+            i studied cs & applied math in my undergrad at notre dame, where I worked on trustworthy AI with {' '}
+            <a href="https://www.nunomoniz.co/" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>nuno moniz</a>
             {' '}and{' '}
-            <HighlightedText href="http://www.meng-jiang.com/">meng jiang</HighlightedText>.
+            <a href="http://www.meng-jiang.com/" className="hover:underline" style={{ color: colors.text }} onMouseEnter={(e) => e.target.style.color = colors.text} onMouseLeave={(e) => e.target.style.color = colors.text}>meng jiang</a>.
 
             <br></br>
             <br></br>
